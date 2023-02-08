@@ -1,0 +1,288 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+*{
+    margin:0px;
+    padding :0px;
+    font-family: 'kalam', sans-serif;
+    transition:  0.3s ease;
+    
+}
+* button:hover{
+    opacity: 0.8;
+    
+    }
+
+*:focus {
+    outline: none;
+}
+:root{
+    --main-color: linear-gradient(to right, rgb(255, 89, 0),orange);
+}
+
+#body{
+    /* position: relative; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://wallpapercave.com/wp/wp3057846.jpg"); 
+    transition: all 1.5s ease-in-out;
+}
+
+#clear button{
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    border:yellowgreen;
+    width: 87px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: rgb(83, 159, 7);
+    color: white;
+    position: fixed;
+    top: 28.8%;
+    left: 65.32%;
+}
+
+
+/* body container  */
+#body-container{
+ 
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dark-mode{
+    height: 200px;
+    width:200px;
+}
+#dark-mode span{
+border-radius: 50%;
+cursor: pointer;
+position: absolute;
+top:5%;
+left:10%;
+height:200px;
+color: white;
+width:200px;
+font-size: 100px;
+font-weight: 100;
+
+}
+#dark-mode p{
+    pointer-events: none;
+    position:fixed;
+    top:3%;
+    left:10%;
+    color:white;
+    font-size: 30px;
+}
+
+
+
+/* TODO heading  */
+#heading{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 800;
+    top:5%;
+    /* left:42%; */
+color:rgb(83, 159, 7);
+
+}
+
+
+/* main container of To Do list*/
+#container{
+    
+    position: fixed;
+    background-color:white;
+    box-sizing: border-box;
+    border-radius: 15px; 
+    box-shadow: 0px 0px 5px 2px rgb(77, 77, 75) ;
+    top:15%; 
+    height: auto;
+    width:800px;
+    overflow: hidden;
+}
+
+
+/* input text field container */
+#task-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:auto;
+}
+
+
+
+/* input text field  */
+#task-input{
+    background-color: white;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 10px;
+    width: 780px;
+    padding: 13px;
+    border: 2px solid rgb(128, 128, 128);
+}
+
+
+/* button for saving the tasks */
+#save-btn{
+    background-color:rgb(83, 159, 7);
+    color:white;
+    border: none;
+    margin: 10px;
+    width: 68px;
+    height:60px;
+    box-shadow: 0px 0px 5px 2px rgb(91, 91, 91) ;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 34px;
+    border-radius: 50%;
+    cursor:pointer;
+};
+
+
+#container form button:hover{
+    opacity:0.8;
+    background-color: rgb(57, 37, 11);
+}
+
+/* task information container */
+#Task-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:50px;
+    width:auto;
+    margin: 10px;
+    background-color:white;
+}
+
+#Task-info button{
+   margin-left: 10px;
+    cursor:pointer;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    width: 160px;
+}
+
+/* Task Count */
+.count{
+    position:relative;
+    top:28%;
+    right: 12%;
+    margin-left: 55px;
+ }
+#Task-info button:hover{
+    
+    background-color:rgb(83, 159, 7);
+    color:black;
+    transition: all ease-in-out 0.2s;
+}
+#Task-info button.active-day{
+    background-color: rgb(83, 159, 7);
+}
+/* task will be shown in this container */
+.task-container{
+    max-height: 600px;
+    box-shadow: 0px 0px 5px 2px grey ;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:15px; 
+    padding: 10px;
+    width:680px;
+}
+
+#task-name{
+    display: flex;
+    flex-direction: row;
+  }
+
+.todo-name {
+   
+    width:650px;
+    height: auto;
+    color: #555555;
+    margin:10px;
+    font-size:30px;
+    font-weight: 200;
+    border:none ;
+}
+#task-name input {  
+    cursor: pointer;
+    margin: 18px 0px;
+    
+}
+.task-container button{
+    cursor:pointer;
+    border:none;
+    background: none;
+    width:auto;
+    padding: 2px;
+    height: auto;
+    
+}
+.task-container button  {
+   
+    font-size: 15px;
+
+    padding: 5px;
+color:black;
+
+}
+.task-container button:hover{
+    color: gray;
+   
+}
+
+.tasklist-container::-webkit-scrollbar {
+    display: none;
+  }
+.tasklist-container{
+
+    max-height: 600px;
+    width: 800px;
+    margin: 10px;
+   
+    overflow-y: auto;
+    position:fixed;
+     top:32%;
+    left:31.7%; 
+}
+.transition{
+    transition: all 1s ease;
+}
+.transitionend{
+  opacity:0.1;
+  transform:translateY(8rem) rotateZ(20deg);
+  transition: transform 0.3s ease  ;
+}
+
+#checkbox{
+    height:25px;
+    width:25px;
+    accent-color:grey;
+    /* filter: sepia(100%) brightness(80%) hue-rotate(170deg) saturate(70%) contrast(300%); */
+    
+}

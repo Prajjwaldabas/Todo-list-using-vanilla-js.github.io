@@ -1,0 +1,63 @@
+.night #clear button:hover{
+    background-color: gray;
+    color:white;
+    }
+    .night #heading{
+        color:white;
+    }
+    .night input{
+        color:white;
+      background-color: black;
+    }
+    .night #task-form {
+        background-color: black;
+    }
+    .night #task-input{
+        background-color: black;
+    }
+    .night #container{
+        background-color: black;
+    }
+    .night #container button{
+        background-image: none;
+        background-color: black;
+        color: gray;
+    }
+    .night #container #Task-info button:hover{
+    background-color: gray;
+    }
+    .night #container #Task-info button.active-day {
+        background-color: rgb(146, 144, 144);
+       color: white;
+    }
+    
+    .night #container #Task-info span {
+    color: whitesmoke;
+    }
+    .night #container #Task-info {
+        background-color: black; 
+    }
+    .night .task-container{
+        background-color: black;
+    }
+    .night .task-container input[type=checkbox]{
+        opacity: 0.5;
+       
+    }
+    .night .task-container button{
+        background-color: black; 
+        color:white;
+    }
+    .night {
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-image: url("https://images.alphacoders.com/101/1019517.jpg"); 
+    }
+    
