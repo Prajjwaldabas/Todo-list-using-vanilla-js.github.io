@@ -25,6 +25,7 @@
     }
     .night #container #Task-info button:hover{
     background-color: gray;
+    color: white;
     }
     .night #container #Task-info button.active-day {
         background-color: rgb(146, 144, 144);

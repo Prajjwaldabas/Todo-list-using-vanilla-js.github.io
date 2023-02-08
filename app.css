@@ -42,14 +42,14 @@
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
     border:yellowgreen;
-    width: 87px;
-    font-size: 17px;
+    width: 60px;
+    font-size: 10px;
     padding: 5px;
     background-color: rgb(83, 159, 7);
     color: white;
     position: fixed;
-    top: 28.8%;
-    left: 65.32%;
+    top: 27.60%;
+    left: 65.60%;
 }
 
 
@@ -95,7 +95,7 @@ font-weight: 100;
     position: absolute;
     font-size: 40px;
     font-weight: 800;
-    top:5%;
+    top:0%;
     /* left:42%; */
 color:rgb(83, 159, 7);
 
@@ -111,8 +111,8 @@ color:rgb(83, 159, 7);
     border-radius: 15px; 
     box-shadow: 0px 0px 5px 2px rgb(77, 77, 75) ;
     top:15%; 
-    height: auto;
-    width:800px;
+    height: 120px;
+    width:600px;
     overflow: hidden;
 }
 
@@ -122,19 +122,20 @@ color:rgb(83, 159, 7);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:auto;
+    width:auto; 
 }
 
 
 
 /* input text field  */
 #task-input{
+    height:50px;
     background-color: white;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
     margin: 10px;
-    width: 780px;
-    padding: 13px;
+    width: 560px;
+    padding-left:5px;
     border: 2px solid rgb(128, 128, 128);
 }
 
@@ -144,13 +145,13 @@ color:rgb(83, 159, 7);
     background-color:rgb(83, 159, 7);
     color:white;
     border: none;
-    margin: 10px;
-    width: 68px;
-    height:60px;
+    margin: 5px;
+    width: 50px;
+    height:48px;
     box-shadow: 0px 0px 5px 2px rgb(91, 91, 91) ;
     padding: 5px;
     font-weight: 600;
-    font-size: 34px;
+    font-size: 25px;
     border-radius: 50%;
     cursor:pointer;
 };
@@ -166,28 +167,35 @@ color:rgb(83, 159, 7);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height:50px;
+    height:20px;
     width:auto;
-    margin: 10px;
+    
     background-color:white;
 }
 
 #Task-info button{
-   margin-left: 10px;
-    cursor:pointer;
+
+    cursor: pointer;
     background-color: white;
-    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 23px;
+    padding-right:20px;
+    padding-top:5px;
     border-radius: 15px;
+    margin-left: 10px;
     border: none;
-    font-size: 20px;
-    width: 160px;
+    font-size: 15px;
+    width: 140px;
+    height: 18px;
+    margin-bottom: 5px;
 }
 
 /* Task Count */
 .count{
+    font-size:15px;
     position:relative;
-    top:28%;
-    right: 12%;
+    top:46%;
+    right: 14%;
     margin-left: 55px;
  }
 #Task-info button:hover{
@@ -209,9 +217,9 @@ color:rgb(83, 159, 7);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin:15px; 
+    margin:10px; 
     padding: 10px;
-    width:680px;
+    width:480px;
 }
 
 #task-name{
@@ -225,7 +233,7 @@ color:rgb(83, 159, 7);
     height: auto;
     color: #555555;
     margin:10px;
-    font-size:30px;
+    font-size:20px;
     font-weight: 200;
     border:none ;
 }
@@ -239,13 +247,13 @@ color:rgb(83, 159, 7);
     border:none;
     background: none;
     width:auto;
-    padding: 2px;
+    padding: 5px;
     height: auto;
     
 }
 .task-container button  {
    
-    font-size: 15px;
+    font-size: 10px;
 
     padding: 5px;
 color:black;
@@ -268,7 +276,7 @@ color:black;
     overflow-y: auto;
     position:fixed;
      top:32%;
-    left:31.7%; 
+    left:32.7%; 
 }
 .transition{
     transition: all 1s ease;
